@@ -43,7 +43,7 @@ int main()
         if (previous == true && current == false)
         {
             led = !led;
-            set_led;
+            set_led(led);
         }
 
         previous = current;

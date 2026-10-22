@@ -8,8 +8,8 @@ const uint BUTTON_PIN = 15;
 
 int main()
 {
-    // инициализируем пин светодиода
-    // настраиваем пин светодиода на выход
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
 
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);

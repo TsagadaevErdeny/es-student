@@ -23,7 +23,8 @@ int main()
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
 
-    // объявляем переменные
+    bool led = false;
+    bool previous = false;
 
     while (1)
     {
